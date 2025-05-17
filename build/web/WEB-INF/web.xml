@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>SignupServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ForgotServlet</servlet-name>
+        <servlet-class>ForgotServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>profileServlet</servlet-name>
+        <servlet-class>profileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/SignupServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForgotServlet</servlet-name>
+        <url-pattern>/ForgotServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>profileServlet</servlet-name>
+        <url-pattern>/profileServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

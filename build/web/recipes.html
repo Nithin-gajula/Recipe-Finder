@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes - Recipe Finder</title>
+  <link rel="stylesheet" href="css\recipestyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="js\recipe.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Recipe Finder</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="recipes.html" class="active">Recipes</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="Search for a recipe...">
+      <button id="searchButton">Search</button>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="recipes-section">
+    <div class="container" id="recipesGrid">
+      <!-- Recipe cards will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Recipe Finder. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

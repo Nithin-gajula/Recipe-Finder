@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+/* Header Styling */
+header {
+  background-color: #ff7e5f;
+  padding: 1rem 0;
+}
+
+header .logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* Favorites Section */
+.favorites-section {
+  background-color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.favorites-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.favorites-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.favorites-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.favorite-card {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.favorite-card img {
+  width: 100%;
+  height: auto;
+}
+
+.favorite-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.favorite-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #feb47b;
+}
+
+/* Empty Message */
+.empty-message {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <link rel="stylesheet" href="css\favoritestyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="js\favorites.js"></script>
+
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Recipe Finder</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="favorites.html" class="active">Favorites</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Favorites Section -->
+  <section class="favorites-section">
+    <div class="container">
+      <h2>Your Favorites</h2>
+      <p>Here are all your saved recipes. Click on a recipe to view more details or remove it from your favorites.</p>
+      <div class="favorites-grid" id="favoritesGrid">
+        <!-- Favorite recipes will be dynamically added here -->
+        <p class="empty-message" id="emptyMessage">No favorites yet. Start adding your favorite recipes!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Recipe Finder. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+
+
+</html>
