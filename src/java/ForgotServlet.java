@@ -1,10 +1,6 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
-//import java.sql.Connection;
-//import java.sql.DriverManager;
-//import java.sql.PreparedStatement;
-//import java.sql.SQLException;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
@@ -20,7 +16,6 @@ public class ForgotServlet extends HttpServlet {
             throws ServletException, IOException {
         
         // Retrieve form data
-        //String username = request.getParameter("name");
         String email = request.getParameter("email");
         String password = request.getParameter("new-Password");
         String confirmPassword = request.getParameter("confirm-Password");
@@ -50,11 +45,10 @@ public class ForgotServlet extends HttpServlet {
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, password);
             pstmt.setString(2, email);
-            //pstmt.setString(3, password);
+
 
             int rows = pstmt.executeUpdate();
             if (rows > 0) {
-                //response.sendRedirect("login.html");
                 out.println("<script type=\'text/javascript\'>");
                 out.println("alert('Password Changed Successfully!');");
                 out.println("window.location.href='login.html'");

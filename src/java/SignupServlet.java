@@ -49,11 +49,6 @@ public class SignupServlet extends HttpServlet {
            out.println("\"<h4>invalid password</h4>\"");
            return;
         }
-         /*if(!Pattern.matches(passwordPattern, confirmPassword))
-        { 
-           out.println("\"<h4>invalid confirmPassword</h4>\"");
-           return;
-        }*/
         if (!password.equals(confirmPassword)) {
             out.println("<h3>Passwords do not match. Please try again.</h3>");
             return;

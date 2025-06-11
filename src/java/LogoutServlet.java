@@ -24,10 +24,6 @@ public class LogoutServlet extends HttpServlet {
         if (session != null) {
             // Invalidate the session
             session.invalidate();
-//            out.println("<script type='text/javascript'>");
-//            out.println("alert('You have successfully logged out.');");
-//            out.println("window.location.href='login.html';");
-//            out.println("</script>");
         }
 
         // Redirect to login page
@@ -41,45 +37,3 @@ public class LogoutServlet extends HttpServlet {
     }
 }
 
-
-//import java.io.IOException;
-//import java.io.PrintWriter;
-//import jakarta.servlet.*;
-//import jakarta.servlet.annotation.WebServlet;
-//import jakarta.servlet.http.*;
-//
-//@WebServlet("/logout")
-//public class LogoutServlet extends HttpServlet {
-//
-//    @Override
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//
-//        response.setContentType("text/html");
-//        PrintWriter out = response.getWriter();
-//
-//        // Get the current session, if exists
-//        HttpSession session = request.getSession(false);
-//
-//        if (session != null) {
-//            // Invalidate the session
-//            session.invalidate();
-//            out.println("<script type='text/javascript'>");
-//            out.println("alert('You have successfully logged out.');");
-//            out.println("window.location.href='login.html';");
-//            out.println("</script>");
-//        } else {
-//            // If no session exists, redirect to login
-//            out.println("<script type='text/javascript'>");
-//            out.println("alert('You are not logged in.');");
-//            out.println("window.location.href='login.html';");
-//            out.println("</script>");
-//        }
-//    }
-//
-//    @Override
-//    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//        doGet(request, response);
-//    }
-//}
