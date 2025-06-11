@@ -16,6 +16,10 @@
         <servlet-name>profileServlet</servlet-name>
         <servlet-class>profileServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -30,6 +34,10 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>profileServlet</servlet-name>
-        <url-pattern>/profileServlet</url-pattern>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
 </web-app>

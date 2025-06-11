@@ -2,7 +2,7 @@ const searchButton = document.getElementById('searchButton');
 const searchInput = document.getElementById('searchInput');
 const recipesGrid = document.getElementById('recipesGrid');
 
-const API_KEY = 'YOUR_API_KEY';
+const API_KEY = 'f8dccaf1135a48e29e62a01a82fea643';
 
 // Fetch recipes from API and display
 async function fetchRecipes(query) {
